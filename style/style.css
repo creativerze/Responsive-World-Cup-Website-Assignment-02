@@ -35,6 +35,11 @@ body{
   padding: 12px 25px;
   border-radius: 5px;
 }
+.animation:hover{
+  padding: 22px 35px;
+  transition: 2s all;
+
+}
 .fa-angle-right{
   margin-left: 5px;
 }
@@ -234,6 +239,7 @@ body{
   }
   .header-text{
     padding-right: 0;
+  }
   }
   .header-image{
     width: 70%;
