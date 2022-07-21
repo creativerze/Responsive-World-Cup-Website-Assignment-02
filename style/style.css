@@ -59,7 +59,7 @@ body{
 }
 .aside-section{
   width: 300px;
-  height: 280px;
+  height: 300px;
   background-color: #031425;
   border-radius: 7px;
 }
@@ -131,6 +131,81 @@ body{
   color: rgb(105, 94, 94);
   margin-right: 20px;
 }
+.extra-button{
+  text-align: center;
+  display: none;
+}
+
+/* ---------------------
+    footer
+------------------  */
+.footer-area{
+  background-color: #031425;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.footer-title{
+  text-align: center;
+  padding: 20px 100px 0 100px;
+}
+.footer-title h1{
+  font-weight: 700;
+  color: white;
+  padding: 0 100px 50px 100px;
+  border-bottom: 1px solid rgb(104, 103, 103);
+}
+.footer-details{
+  padding: 20px 100px;
+}
+.footer-details ul{
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.footer-details ul li{
+  text-align: center;
+  align-items: center;
+
+}
+.footer-details ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.social-icon{
+  color: white;
+  text-align: center;
+}
+.social-icon a{
+  text-decoration: none;
+  color: white;
+}
+.footer-icon{
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* new file  */
+.full-flag{
+  border: 1px solid rgb(233, 230, 230);
+  border-radius: 10px;
+}
+.flag{
+  display: flex;
+  padding: 10px;
+}
+.flag-vs{
+  padding: 0 10px;
+}
+.flag-details{
+  text-align: center;
+}
+.flag-text{
+  font-weight: 700;
+  font-size: 18px;
+}
+
 
 
 
@@ -202,7 +277,31 @@ body{
   .video-section{
     width: 100%;
   }
+    /* footer area  */
+    .footer-area{
+      padding-bottom: 0;
+    }
+    .footer-details{
+      padding: 0px 50px;
+      margin: auto;
+      width: 50%;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+    }
+    .footer-details ul{
+      display: inline-block;
+      padding: 0;
+
+    }
+    .footer-details ul li{
+      text-align: center;
+      align-items: center;
+      margin: 40px 20px;
+    }
 }
+
+
 
 /* midium device */
 @media screen and (min-width: 577px) and (max-width: 768px){
@@ -279,5 +378,18 @@ body{
   }
   .video-section{
     width: 100%;
+  }
+  .extra-button{
+    display: block;
+    margin-bottom: 50px;
+  }
+  /* footer area  */
+  .footer-details{
+    padding: 20px 50px;
+  }
+  .footer-details ul{
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 30px;
+    padding: 0;
   }
 }
